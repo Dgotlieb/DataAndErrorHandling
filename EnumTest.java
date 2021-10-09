@@ -8,10 +8,14 @@ public class EnumTest {
         try {
             Modes modes = Modes.valueOf(choice);
             switch (modes) {
-                case ON -> System.out.println("Lights ON");
-                case OFF -> System.out.println("Lights OFF");
+                case ON:
+                    System.out.println("Lights ON");
+                    break;
+                case OFF:
+                    System.out.println("Lights OFF");
+                    break;
             }
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println("Invalid choice");
         }
     }
